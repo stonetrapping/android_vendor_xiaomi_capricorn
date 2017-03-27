@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),capricorn)
+ifeq ($(TARGET_DEVICE),scorpio)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libsdm-disp-apis
