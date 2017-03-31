@@ -1037,9 +1037,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/scorpio/proprietary/graphics/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/xiaomi/scorpio/proprietary/graphics/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/xiaomi/scorpio/proprietary/graphics/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
-    vendor/xiaomi/scorpio/proprietary/graphics/vendor/lib/libsd_sdk_display.so:system/vendor/lib/libsd_sdk_display.so
-
-
+    vendor/xiaomi/scorpio/proprietary/graphics/vendor/lib/libsd_sdk_display.so:system/vendor/lib/libsd_sdk_display.so \
+    vendor/xiaomi/scorpio/proprietary/lib/hw/fingerprint.fpc.so:system/lib/hw/fingerprint.fpc.so \
+    vendor/xiaomi/scorpio/proprietary/lib64/hw/fingerprint.fpc.so:system/lib64/hw/fingerprint.fpc.so \
+    vendor/xiaomi/scorpio/proprietary/lib64/libcom_fingerprints_service.so:system/lib64/libcom_fingerprints_service.so
 PRODUCT_PACKAGES += \
     libsdm-disp-apis \
     libloc_api_v02 \
@@ -1050,6 +1051,7 @@ PRODUCT_PACKAGES += \
     embms \
     fastdormancy \
     QFingerprintService \
+    FingerprintServiceExtension \
     QtiTelephonyService \
     shutdownlistener \
     TimeService \
