@@ -96,7 +96,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/scorpio/proprietary/bin/pm-proxy:system/bin/pm-proxy \
     vendor/xiaomi/scorpio/proprietary/bin/pm-service:system/bin/pm-service \
     vendor/xiaomi/scorpio/proprietary/bin/port-bridge:system/bin/port-bridge \
-    vendor/xiaomi/scorpio/proprietary/bin/qfp-daemon:system/bin/qfp-daemon \
     vendor/xiaomi/scorpio/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/xiaomi/scorpio/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/xiaomi/scorpio/proprietary/bin/qvop-daemon:system/bin/qvop-daemon \
