@@ -43,7 +43,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/scorpio/proprietary/vendor/etc/perf-profile6.conf:system/vendor/etc/perf-profile6.conf \
     vendor/xiaomi/scorpio/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf \
     vendor/xiaomi/scorpio/proprietary/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
-    vendor/xiaomi/scorpio/proprietary/bin/garden_app:system/bin/bin/garden_app \
+    vendor/xiaomi/scorpio/proprietary/bin/garden_app:system/bin/garden_app \
     vendor/xiaomi/scorpio/proprietary/etc/permissions/com.xiaomi.sensor.xml:system/etc/permissions/com.xiaomi.sensor.xml \
     vendor/xiaomi/scorpio/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
     vendor/xiaomi/scorpio/proprietary/lib/libcalapi.so:system/lib/libcalapi.so \
@@ -74,12 +74,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/scorpio/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/xiaomi/scorpio/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/xiaomi/scorpio/proprietary/bin/cnd:system/bin/cnd \
-    vendor/xiaomi/scorpio/proprietary/bin/cnss_diag:system/bin/cnss_diag \
     vendor/xiaomi/scorpio/proprietary/bin/displayfeature:system/bin/displayfeature \
     vendor/xiaomi/scorpio/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/xiaomi/scorpio/proprietary/bin/dun-server:system/bin/dun-server \
     vendor/xiaomi/scorpio/proprietary/bin/energy-awareness:system/bin/energy-awareness \
-    vendor/xiaomi/scorpio/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/xiaomi/scorpio/proprietary/bin/hvdcp_opti:system/bin/hvdcp_opti \
     vendor/xiaomi/scorpio/proprietary/bin/imscmservice:system/bin/imscmservice \
     vendor/xiaomi/scorpio/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
@@ -91,7 +89,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/scorpio/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/xiaomi/scorpio/proprietary/bin/mmbn-daemon:system/bin/mmbn-daemon \
     vendor/xiaomi/scorpio/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
-    vendor/xiaomi/scorpio/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance \
     vendor/xiaomi/scorpio/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/xiaomi/scorpio/proprietary/bin/pm-proxy:system/bin/pm-proxy \
     vendor/xiaomi/scorpio/proprietary/bin/pm-service:system/bin/pm-service \
@@ -116,8 +113,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/scorpio/proprietary/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb:system/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb \
     vendor/xiaomi/scorpio/proprietary/etc/acdbdata/Forte/Forte_Headset_cal.acdb:system/etc/acdbdata/Forte/Forte_Headset_cal.acdb \
     vendor/xiaomi/scorpio/proprietary/etc/acdbdata/Forte/Forte_Speaker_cal.acdb:system/etc/acdbdata/Forte/Forte_Speaker_cal.acdb \
-    vendor/xiaomi/scorpio/proprietary/etc/camera/imx214_chromatix.xml:system/etc/camera/imx214_chromatix.xml \
-    vendor/xiaomi/scorpio/proprietary/etc/camera/imx230_chromatix.xml:system/etc/camera/imx230_chromatix.xml \
+    vendor/xiaomi/scorpio/proprietary/etc/camera/imx268_chromatix.xml:system/etc/camera/imx268_chromatix.xml \
+    vendor/xiaomi/scorpio/proprietary/etc/camera/imx268_sunny_chromatix.xml:system/etc/camera/imx268_sunny_chromatix.xml \
     vendor/xiaomi/scorpio/proprietary/etc/camera/imx230_qc2002_chromatix.xml:system/etc/camera/imx230_qc2002_chromatix.xml \
     vendor/xiaomi/scorpio/proprietary/etc/camera/imx258_chromatix.xml:system/etc/camera/imx258_chromatix.xml \
     vendor/xiaomi/scorpio/proprietary/etc/camera/imx258_mono_chromatix.xml:system/etc/camera/imx258_mono_chromatix.xml \
@@ -125,8 +122,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/scorpio/proprietary/etc/camera/imx258_ofilm_chromatix.xml:system/etc/camera/imx258_ofilm_chromatix.xml \
     vendor/xiaomi/scorpio/proprietary/etc/camera/imx298_chromatix.xml:system/etc/camera/imx298_chromatix.xml \
     vendor/xiaomi/scorpio/proprietary/etc/camera/imx318_chromatix.xml:system/etc/camera/imx318_chromatix.xml \
-    vendor/xiaomi/scorpio/proprietary/etc/camera/imx362_chromatix.xml:system/etc/camera/imx362_chromatix.xml \
-    vendor/xiaomi/scorpio/proprietary/etc/camera/imx378_chromatix.xml:system/etc/camera/imx378_chromatix.xml \
+    vendor/xiaomi/scorpio/proprietary/etc/camera/imx318_semco_chromatix.xml:system/etc/camera/imx318_semco_chromatix.xml \
+    vendor/xiaomi/scorpio/proprietary/etc/camera/imx318_primax_chromatix.xml:system/etc/camera/imx318_primax_chromatix.xml \
     vendor/xiaomi/scorpio/proprietary/etc/camera/imx378_liteon_chromatix.xml:system/etc/camera/imx378_liteon_chromatix.xml \
     vendor/xiaomi/scorpio/proprietary/etc/camera/imx378_semco_chromatix.xml:system/etc/camera/imx378_semco_chromatix.xml \
     vendor/xiaomi/scorpio/proprietary/etc/camera/msm8996_camera.xml:system/etc/camera/msm8996_camera.xml \
@@ -197,7 +194,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/scorpio/proprietary/etc/firmware/rampatch_tlv_3.2.tlv:system/etc/firmware/rampatch_tlv_3.2.tlv \
     vendor/xiaomi/scorpio/proprietary/etc/firmware/rampatch_tlv.img:system/etc/firmware/rampatch_tlv.img \
     vendor/xiaomi/scorpio/proprietary/etc/firmware/tfa9891.cnt:system/etc/firmware/tfa9891.cnt \
-    vendor/xiaomi/scorpio/proprietary/etc/init.captouch.sh:system/etc/init.captouch.sh \
     vendor/xiaomi/scorpio/proprietary/etc/modem/Diag.cfg:system/etc/modem/Diag.cfg \
     vendor/xiaomi/scorpio/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/xiaomi/scorpio/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
@@ -316,10 +312,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/libGPreqcancel_svc.so:system/vendor/lib64/libGPreqcancel_svc.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/libI420colorconvert.so:system/vendor/lib64/libI420colorconvert.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so \
-    vendor/xiaomi/gemini/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/lib-imscamera.so:system/vendor/lib64/lib-imscamera.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/lib-imsdpl.so:system/vendor/lib64/lib-imsdpl.so \
-    vendor/xiaomi/gemini/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib64/libimsmedia_jni.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/lib-imsqimf.so:system/vendor/lib64/lib-imsqimf.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/lib-imsrcscmclient.so:system/vendor/lib64/lib-imsrcscmclient.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/lib-ims-rcscmjni.so:system/vendor/lib64/lib-ims-rcscmjni.so \
@@ -355,7 +349,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/libqc-opt.so:system/vendor/lib64/libqc-opt.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/libqdi.so:system/vendor/lib64/libqdi.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/libqdp.so:system/vendor/lib64/libqdp.so \
-    vendor/xiaomi/scorpio/proprietary/vendor/lib64/libqfp-service.so:system/vendor/lib64/libqfp-service.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/libqisl.so:system/vendor/lib64/libqisl.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/libqmi_cci.so:system/vendor/lib64/libqmi_cci.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/libqmi_client_helper.so:system/vendor/lib64/libqmi_client_helper.so \
@@ -406,7 +399,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/libxt_native.so:system/vendor/lib64/libxt_native.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so \
-    vendor/xiaomi/scorpio/proprietary/vendor/lib64/qfp.wakeup.so:system/vendor/lib64/qfp.wakeup.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/sensors.oem.so:system/vendor/lib64/sensors.oem.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/sensors.ssc.so:system/vendor/lib64/sensors.ssc.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/sensors.xiaomials.so:system/vendor/lib64/sensors.xiaomials.so \
@@ -921,7 +913,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
-    vendor/xiaomi/scorpio/proprietary/vendor/lib/libqfp-service.so:system/vendor/lib/libqfp-service.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/libqmi_client_helper.so:system/vendor/lib/libqmi_client_helper.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
@@ -959,7 +950,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
-    vendor/xiaomi/scorpio/proprietary/vendor/lib/qfp.wakeup.so:system/vendor/lib/qfp.wakeup.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so:system/vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_skel.so:system/vendor/lib/rfsa/adsp/libadsp_hvx_skel.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_stats.so:system/vendor/lib/rfsa/adsp/libadsp_hvx_stats.so \
@@ -1043,16 +1033,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/scorpio/proprietary/lib64/hw/sensors.msm8996.so:system/lib64/hw/sensors.msm8996.so \
     vendor/xiaomi/scorpio/proprietary/lib/libcom_fingerprints_service.so:system/lib/libcom_fingerprints_service.so \
     vendor/xiaomi/scorpio/proprietary/lib64/libcom_fingerprints_service.so:system/lib64/libcom_fingerprints_service.so \
-    #Temp - try to bring back sensor functionality
-    #vendor/xiaomi/scorpio/proprietary/lib/libsensorservice.so:system/lib/libsensorservice.so \
-    #vendor/xiaomi/scorpio/proprietary/lib64/libsensorservice.so:system/lib64.libsensorservice.so \
-    #vendor/xiaomi/scorpio/proprietary/lib64/libmiui_sensor.so:system/lib64/libmiui_sensor.so \
-# Scorpio Camera and Display Calib
+    vendor/xiaomi/scorpio/proprietary/lib/libsensorservice.so:system/lib/libsensorservice.so \
+    vendor/xiaomi/scorpio/proprietary/lib64/libsensorservice.so:system/lib64.libsensorservice.so \
     vendor/xiaomi/scorpio/proprietary/etc/qdcm_calib_data_lgd_sw43101_p2_video_fhd_oled_panel.xml:system/etc/qdcm_calib_data_lgd_sw43101_p2_video_fhd_oled_panel.xml \
     vendor/xiaomi/scorpio/proprietary/etc/qdcm_calib_data_lgd_sw43101_video_fhd_oled_panel.xml:system/etc/qdcm_calib_data_lgd_sw43101_video_fhd_oled_panel.xml \
-    vendor/xiaomi/scorpio/proprietary/lib/hw/consumerir.msm8996.so:system/lib/hw/consumerir.msm8996.so \
     vendor/xiaomi/scorpio/proprietary/lib/hw/fingerprint.fpc.so:system/lib/hw/fingerprint.fpc.so \
-    vendor/xiaomi/scorpio/proprietary/lib64/hw/consumerir.msm8996.so:system/lib64/hw/consumerir.msm8996.so \
     vendor/xiaomi/scorpio/proprietary/lib64/hw/fingerprint.fpc.so:system/lib64/hw/fingerprint.fpc.so \
     vendor/xiaomi/scorpio/proprietary/vendor/firmware/libpn548ad_fw.so:system/vendor/firmware/libpn548ad_fw.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/libactuator_ak7371_a4_primax.so:system/vendor/lib/libactuator_ak7371_a4_primax.so \
