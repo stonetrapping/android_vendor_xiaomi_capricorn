@@ -71,6 +71,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/librilqmiservices.so:system/vendor/lib64/librilqmiservices.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/libsensor_test.so:system/vendor/lib64/libsensor_test.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/libsettings.so:system/vendor/lib64/libsettings.so \
+    vendor/xiaomi/scorpio/proprietary/vendor/lib64/libuiblur.so:system/vendor/lib64/libuiblur.so \
     vendor/xiaomi/scorpio/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/xiaomi/scorpio/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/xiaomi/scorpio/proprietary/bin/cnd:system/bin/cnd \
