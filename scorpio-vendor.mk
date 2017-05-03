@@ -172,7 +172,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/scorpio/proprietary/etc/firmware/a530_zap.b02:system/etc/firmware/a530_zap.b02 \
     vendor/xiaomi/scorpio/proprietary/etc/firmware/a530_zap.elf:system/etc/firmware/a530_zap.elf \
     vendor/xiaomi/scorpio/proprietary/etc/firmware/a530_zap.mdt:system/etc/firmware/a530_zap.mdt \
-    vendor/xiaomi/scorpio/proprietary/etc/firmware/cpp_firmware_v1_10_0.fw:system/etc/firmware/cpp_firmware_v1_10_0.fw \
     vendor/xiaomi/scorpio/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
     vendor/xiaomi/scorpio/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
     vendor/xiaomi/scorpio/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
@@ -181,6 +180,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/scorpio/proprietary/etc/firmware/cpp_firmware_v1_5_2.fw:system/etc/firmware/cpp_firmware_v1_5_2.fw \
     vendor/xiaomi/scorpio/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
     vendor/xiaomi/scorpio/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
+    vendor/xiaomi/scorpio/proprietary/etc/firmware/cpp_firmware_v1_12_0.fw:system/etc/firmware/cpp_firmware_v1_12_0.fw \
+    vendor/xiaomi/scorpio/proprietary/etc/firmware/cpp_firmware_v1_10_0.fw:system/etc/firmware/cpp_firmware_v1_10_0.fw \
     vendor/xiaomi/scorpio/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
     vendor/xiaomi/scorpio/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
     vendor/xiaomi/scorpio/proprietary/etc/firmware/nvm_tlv_1.3.bin:system/etc/firmware/nvm_tlv_1.3.bin \
@@ -312,8 +313,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/libGPreqcancel_svc.so:system/vendor/lib64/libGPreqcancel_svc.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/libI420colorconvert.so:system/vendor/lib64/libI420colorconvert.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so \
+    vendor/xiaomi/scorpio/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/lib-imscamera.so:system/vendor/lib64/lib-imscamera.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/lib-imsdpl.so:system/vendor/lib64/lib-imsdpl.so \
+    vendor/xiaomi/scorpio/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib64/libimsmedia_jni.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/lib-imsqimf.so:system/vendor/lib64/lib-imsqimf.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/lib-imsrcscmclient.so:system/vendor/lib64/lib-imsrcscmclient.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/lib-ims-rcscmjni.so:system/vendor/lib64/lib-ims-rcscmjni.so \
@@ -444,7 +447,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/libadpcmdec.so:system/vendor/lib/libadpcmdec.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/libadsp_default_listener.so:system/vendor/lib/libadsp_default_listener.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/libadsp_hvx_callback_skel.so:system/vendor/lib/libadsp_hvx_callback_skel.so \
-    vendor/xiaomi/scorpio/proprietary/vendor/lib/libadsp_hvx_stub.so:system/vendor/lib/libadsp_hvx_stub.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/libarcsoft_beautyshot_image_algorithm.so:system/vendor/lib/libarcsoft_beautyshot_image_algorithm.so \
@@ -860,7 +862,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/libsdm-diag.so:system/vendor/lib64/libsdm-diag.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/libsdmextension.so:system/vendor/lib64/libsdmextension.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib64/libsd_sdk_display.so:system/vendor/lib64/libsd_sdk_display.so \
-    vendor/xiaomi/scorpio/proprietary/vendor/lib64/libuiblur.so:system/vendor/lib64/libuiblur.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
@@ -886,15 +887,64 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
     vendor/xiaomi/scorpio/proprietary/vendor/lib/libsd_sdk_display.so:system/vendor/lib/libsd_sdk_display.so \
+    vendor/xiaomi/scorpio/proprietary/vendor/lib/libeglc2d.so:system/vendor/lib/libeglc2d.so \
+    vendor/xiaomi/scorpio/proprietary/etc/qvop/antispoofing.bin:system/etc/qvop/antispoofing.bin \
+    vendor/xiaomi/scorpio/proprietary/etc/qvop/cmudict.bin:system/etc/qvop/cmudict.bin \
+    vendor/xiaomi/scorpio/proprietary/etc/qvop/noisesample.bin:system/etc/qvop/noisesample.bin \
+    vendor/xiaomi/scorpio/proprietary/etc/qvop/poc_64_hmm.gmm:system/etc/qvop/poc_64_hmm.gmm \
     vendor/xiaomi/scorpio/proprietary/lib/hw/fingerprint.fpc.so:system/lib/hw/fingerprint.fpc.so \
     vendor/xiaomi/scorpio/proprietary/lib64/hw/fingerprint.fpc.so:system/lib64/hw/fingerprint.fpc.so \
     vendor/xiaomi/scorpio/proprietary/lib/libcom_fingerprints_service.so:system/lib/libcom_fingerprints_service.so \
     vendor/xiaomi/scorpio/proprietary/lib64/libcom_fingerprints_service.so:system/lib64/libcom_fingerprints_service.so \
+    vendor/xiaomi/scorpio/proprietary/etc/mixer_paths_tasha.xml:system/etc/mixer_paths_tasha.xml \
+    vendor/xiaomi/scorpio/proprietary/etc/calib.cfg:system/etc/calib.cfg \
+    vendor/xiaomi/scorpio/proprietary/bin/cnss_diag:system/bin/cnss_diag \
+    vendor/xiaomi/scorpio/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance \
+    vendor/xiaomi/scorpio/proprietary/etc/izat.conf:system/etc/izat.conf \
+    vendor/xiaomi/scorpio/proprietary/lib/hw/sensors.msm8996.so:system/lib/hw/sensors.msm8996.so \
+    vendor/xiaomi/scorpio/proprietary/lib64/hw/sensors.msm8996.so:system/lib64/hw/sensors.msm8996.so \
+    vendor/xiaomi/scorpio/proprietary/vendor/lib64/libual.so:system/vendor/lib64/libual.so \
+    vendor/xiaomi/scorpio/proprietary/vendor/lib64/libualutil.so:system/vendor/lib64/libualutil.so \
+    vendor/xiaomi/scorpio/proprietary/vendor/lib64/libusndroute.so:system/vendor/lib64/libusndroute.so \
+vendor/xiaomi/scorpio/proprietary/vendor/lib64/libqcci_legacy.so:system/vendor/lib64/libqcci_legacy.so \
+vendor/xiaomi/scorpio/proprietary/vendor/lib64/libqcmaputils.so:system/vendor/lib64/libqcmaputils.so \
+    vendor/scorpio/scorpio/proprietary/vendor/lib64/libqc-opt.so:system/vendor/lib64/libqc-opt.so \
+vendor/xiaomi/scorpio/proprietary/vendor/lib64/libavenhancements.so:system/vendor/lib64/libavenhancements.so \
+vendor/xiaomi/scorpio/proprietary/vendor/lib/libqcproximity.so:system/vendor/lib/libqcproximity.so \
+    vendor/xiaomi/scorpio/proprietary/vendor/lib/libavenhancements.so:system/vendor/lib/libavenhancements.so \
+    vendor/xiaomi/scorpio/proprietary/vendor/etc/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf \
+vendor/xiaomi/scorpio/proprietary/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf \
+    vendor/xiaomi/scorpio/proprietary/vendor/etc/audio_output_policy.conf:system/vendor/etc/audio_output_policy.conf \
+    vendor/xiaomi/scorpio/proprietary/etc/aanc_tuning_mixer.txt:system/etc/aanc_tuning_mixer.txt \
+    vendor/xiaomi/scorpio/proprietary/lib64/egl/libGLES_android.so:system/lib64/egl/libGLES_android.so \
+    vendor/xiaomi/scorpio/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
+    vendor/xiaomi/scorpio/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg \
+    vendor/xiaomi/scorpio/proprietary/etc/permissions/android.hardware.vr.high_performance.xml:system/etc/permissions/android.hardware.vr.high_performance.xml \
+    vendor/xiaomi/scorpio/proprietary/etc/permissions/android.hardware.vulkan.version.xml:system/etc/permissions/android.hardware.vulkan.version.xml \
+    vendor/xiaomi/scorpio/proprietary/etc/permissions/android.hardware.vulkan.level.xml:system/etc/permissions/android.hardware.vulkan.level.xml \
+    vendor/xiaomi/scorpio/proprietary/etc/permissions/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
+    vendor/xiaomi/scorpio/proprietary/lib/libEGL.so:system/lib/libEGL.so \
+    vendor/xiaomi/scorpio/proprietary/lib/libETC1.so:system/lib/libETC1.so \
+    vendor/xiaomi/scorpio/proprietary/lib/libGLESv1_CM.so:system/lib/libGLESv1_CM.so \
+    vendor/xiaomi/scorpio/proprietary/lib/libGLESv2.so:system/lib/libGLESv2.so \
+    vendor/xiaomi/scorpio/proprietary/lib/libGLESv3.so:system/lib/libGLESv3.so \
+    vendor/xiaomi/scorpio/proprietary/lib/libOpenMAXAL.so:system/lib/libOpenMAXAL.so \
+    vendor/xiaomi/scorpio/proprietary/lib/libOpenSLES.so:system/lib/libOpenSLES.so \
+    vendor/xiaomi/scorpio/proprietary/lib/libvulkan.so:system/lib/libvulkan.so \
+    vendor/xiaomi/scorpio/proprietary/lib64/libEGL.so:system/lib64/libEGL.so \
+    vendor/xiaomi/scorpio/proprietary/lib64/libETC1.so:system/lib64/libETC1.so \
+    vendor/xiaomi/scorpio/proprietary/lib64/libGLESv1_CM.so:system/lib64/libGLESv1_CM.so \
+    vendor/xiaomi/scorpio/proprietary/lib64/libGLESv2.so:system/lib64/libGLESv2.so \
+    vendor/xiaomi/scorpio/proprietary/lib64/libGLESv3.so:system/lib64/libGLESv3.so \
+    vendor/xiaomi/scorpio/proprietary/lib64/libOpenMAXAL.so:system/lib64/libOpenMAXAL.so \
+    vendor/xiaomi/scorpio/proprietary/lib64/libOpenSLES.so:system/lib64/libOpenSLES.so \
+    vendor/xiaomi/scorpio/proprietary/lib64/libvulkan.so:system/lib64/libvulkan.so \
     vendor/xiaomi/scorpio/proprietary/etc/qdcm_calib_data_lgd_sw43101_p2_video_fhd_oled_panel.xml:system/etc/qdcm_calib_data_lgd_sw43101_p2_video_fhd_oled_panel.xml \
     vendor/xiaomi/scorpio/proprietary/etc/qdcm_calib_data_lgd_sw43101_video_fhd_oled_panel.xml:system/etc/qdcm_calib_data_lgd_sw43101_video_fhd_oled_panel.xml \
     vendor/xiaomi/scorpio/proprietary/lib/hw/fingerprint.fpc.so:system/lib/hw/fingerprint.fpc.so \
     vendor/xiaomi/scorpio/proprietary/lib64/hw/fingerprint.fpc.so:system/lib64/hw/fingerprint.fpc.so \
     vendor/xiaomi/scorpio/proprietary/vendor/firmware/libpn548ad_fw.so:system/vendor/firmware/libpn548ad_fw.so 
+
 
 PRODUCT_PACKAGES += \
     libsdm-disp-apis \
