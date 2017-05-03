@@ -932,6 +932,7 @@ vendor/xiaomi/scorpio/proprietary/vendor/etc/audio_effects.conf:system/vendor/et
     vendor/xiaomi/scorpio/proprietary/lib/libOpenMAXAL.so:system/lib/libOpenMAXAL.so \
     vendor/xiaomi/scorpio/proprietary/lib/libOpenSLES.so:system/lib/libOpenSLES.so \
     vendor/xiaomi/scorpio/proprietary/lib/libvulkan.so:system/lib/libvulkan.so \
+    vendor/xiaomi/scorpio/proprietary/lib/libacdbmapper.so:system/proprietary/lib/libacdbmapper.so \
     vendor/xiaomi/scorpio/proprietary/lib64/libEGL.so:system/lib64/libEGL.so \
     vendor/xiaomi/scorpio/proprietary/lib64/libETC1.so:system/lib64/libETC1.so \
     vendor/xiaomi/scorpio/proprietary/lib64/libGLESv1_CM.so:system/lib64/libGLESv1_CM.so \
@@ -940,6 +941,7 @@ vendor/xiaomi/scorpio/proprietary/vendor/etc/audio_effects.conf:system/vendor/et
     vendor/xiaomi/scorpio/proprietary/lib64/libOpenMAXAL.so:system/lib64/libOpenMAXAL.so \
     vendor/xiaomi/scorpio/proprietary/lib64/libOpenSLES.so:system/lib64/libOpenSLES.so \
     vendor/xiaomi/scorpio/proprietary/lib64/libvulkan.so:system/lib64/libvulkan.so \
+    vendor/xiaomi/scorpio/proprietary/lib64/libacdbmapper.so:system/proprietary/lib64/libacdbmapper.so \
     vendor/xiaomi/scorpio/proprietary/etc/qdcm_calib_data_lgd_sw43101_p2_video_fhd_oled_panel.xml:system/etc/qdcm_calib_data_lgd_sw43101_p2_video_fhd_oled_panel.xml \
     vendor/xiaomi/scorpio/proprietary/etc/qdcm_calib_data_lgd_sw43101_video_fhd_oled_panel.xml:system/etc/qdcm_calib_data_lgd_sw43101_video_fhd_oled_panel.xml \
     vendor/xiaomi/scorpio/proprietary/lib/hw/fingerprint.fpc.so:system/lib/hw/fingerprint.fpc.so \
